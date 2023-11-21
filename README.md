@@ -1,4 +1,4 @@
-![image](https://github.com/Matheus-Franca-x/BDExerc052/assets/99504777/d3ae0c2b-2e8f-48b0-9862-564002028b17)# BDExerc052
+# BDExerc052
 ---
 ## links:
 ### [exercicio 7](#exercício-7)
