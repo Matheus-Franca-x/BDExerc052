@@ -306,7 +306,7 @@ Médico(PK)(FK)	|Paciente(PK)(FK)	|DataHora(PK)	|Diagnóstico
 
 ## Exercício 12:
 
-Planos:
+### Planos:
 CodPlano(PK)	|NomePlano	|ValorPlano
 -|-|-
 1	|100 Minutos	|80
@@ -316,7 +316,7 @@ CodPlano(PK)	|NomePlano	|ValorPlano
 5	|300 Minutos	|260
 6	|600 Minutos	|350
 
-Servicos:
+### Servicos:
 CodServico(PK)	|NomeServico	|ValorServico
 -|-|-
 1	|100 SMS	|10
@@ -325,7 +325,7 @@ CodServico(PK)	|NomeServico	|ValorServico
 4	|Internet 1 GB	|60
 5	|Internet 2 GB	|70
 
-Cliente:
+### Cliente:
 CodCliente(PK)	|NomeCliente	|DataInicio
 -|-|-
 1234	|Cliente A	|2012-10-15
@@ -336,7 +336,7 @@ CodCliente(PK)	|NomeCliente	|DataInicio
 7404	|Cliente F	|2013-01-20
 8638	|Cliente G	|2013-01-25
 
-Contratos				
+### Contratos:
 CodCliente(PK)(FK)	|CodPlano(PK)(FK)	|CodServico(PK)(FK)	|Status	|Data(PK)
 -|-|-|-|-
 1234	|3	|1	|E	|2012-10-15
