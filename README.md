@@ -258,7 +258,7 @@ Código(PK)	|Nome	|Telefone
 5678	|Intermédica	|41415269
 
 ### Paciente:
-CPF(PK)	|Nome	|Rua	|Número	|Bairro	|Telefone	|Plano de Saúde(PK)(FK)
+CPF(PK)	|Nome	|Rua	|Número	|Bairro	|Telefone	|Plano de Saúde(FK)
 -|-|-|-|-|-|-
 85987458920	|Maria Paula	|R. Voluntários da Pátria	|589	|Santana	|98458741	|2345
 87452136900	|Ana Julia	  |R. XV de Novembro	|657	|Centro	|69857412	|5678
@@ -266,7 +266,7 @@ CPF(PK)	|Nome	|Rua	|Número	|Bairro	|Telefone	|Plano de Saúde(PK)(FK)
 63259874100	|José Lima 	  |R. Anhaia	|768	|Barra Funda	|96524156	|2345
 
 ### Médico:
-Código(PK)	|Nome	|Especialidade	|Plano de Saúde(PK)(FK)
+Código(PK)	|Nome	|Especialidade	|Plano de Saúde(FK)
 -|-|-|-
 1	|Claudio	|Clínico Geral	|1234
 2	|Larissa	|Ortopedista	|2345
