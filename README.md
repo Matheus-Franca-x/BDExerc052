@@ -165,8 +165,8 @@ Código(PK)	|Nome	|Breve Biografia
 107	|William Stallings	|Doutorado em Ciências da Computacão pelo MIT
 108	|Carlos Morimoto	|Criador do Kurumin Linux
 
-### Compras:
-Código(PK)|	Cod. Livro(FK)	|Qtd Comprada(Qtd > 0)	|Valor(Valor > 0)	|Data Compra
+### Compra:
+Código(PK)|	Cod. Livro(PK)(FK)	|Qtd Comprada(Qtd > 0)	|Valor(Valor > 0)	|Data Compra(PK)
 -|-|-|-|-
 15051	|10003	|2	|158.00	|2020-07-04
 15051	|10008	|1	|95.00	|2020-07-04
