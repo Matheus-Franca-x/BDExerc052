@@ -25,7 +25,7 @@ RG(PK)	|CPF	|Nome	|Logradouro	|Numero
 23987746x	|43587669920	|Marcos Alberto	|R. Quinze	|22
 
 ### Pedido:
-Nota Fiscal(PK)	|Valor	|Data	|RG_Cliente(FK)
+Nota Fiscal(PK)	|Valor	|Data(PK)	|RG_Cliente(FK)
 -|-|-|-
 1001	|754	|2018-04-01	|121985541
 1002	|350	|2018-04-02	|121985541
