@@ -248,6 +248,130 @@ Nota Fiscal(PK)	|CPF_cliente(PK)(FK)	|Código_Medicamento(PK)(FK)	|Quantidade	|V
 
 ## Exercício 11:
 
+### Planos de Saúde:
+Código(PK)	|Nome	|Telefone
+-|-|-
+1234	|Amil	|41599856
+2345	|Sul América	|45698745
+3456	|Unimed	|48759836
+4567	|Bradesco Saúde	|47265897
+5678	|Intermédica	|41415269
 
+### Paciente:
+CPF(PK)	|Nome	|Rua	|Número	|Bairro	|Telefone	|Plano de Saúde(PK)(FK)
+-|-|-|-|-|-|-
+85987458920	|Maria Paula	|R. Voluntários da Pátria	|589	|Santana	|98458741	|2345
+87452136900	|Ana Julia	  |R. XV de Novembro	|657	|Centro	|69857412	|5678
+23659874100	|João Carlos	|R. Sete de Setembro	|12	|República	|74859632	|1234
+63259874100	|José Lima 	  |R. Anhaia	|768	|Barra Funda	|96524156	|2345
+
+### Médico:
+Código(PK)	|Nome	|Especialidade	|Plano de Saúde(PK)(FK)
+-|-|-|-
+1	|Claudio	|Clínico Geral	|1234
+2	|Larissa	|Ortopedista	|2345
+3	|Juliana	|Otorrinolaringologista	|4567
+4	|Sérgio	|Pediatra	|1234
+5	|Julio	|Clínico Geral	|4567
+6	|Samara	|Cirurgião	|1234
+
+### Consulta:
+Médico(PK)(FK)	|Paciente(PK)(FK)	|DataHora(PK)	|Diagnóstico
+-|-|-|-
+1	|85987458920	|2021-02-10 10:30:00	|Gripe
+2	|23659874100	|2021-02-10 11:00:00	|Pé Fraturado
+4	|85987458920	|2021-02-11 14:00:00	|Pneumonia
+1	|23659874100	|2021-02-11 15:00:00	|Asma
+3	|87452136900	|2021-02-11 16:00:00	|Sinusite
+5	|63259874100	|2021-02-11 17:00:00	|Rinite
+4	|23659874100	|2021-02-11 18:00:00	|Asma
+5	|63259874100	|2021-02-12 10:00:00	|Rinoplastia
+
+## Consultar:
+- Nome e especialidade dos médicos da Amil
+- Nome, Endereço concatenado, Telefone e Nome do Plano de Saúde de todos os pacientes
+- Telefone do Plano de  Saúde de Ana Júlia
+- Plano de Saúde que não tem pacientes cadastrados
+- Planos de Saúde que não tem médicos cadastrados
+- Data da consulta, Hora da consulta, nome do médico, nome do paciente e diagnóstico de todas as consultas
+- Nome do médico, data e hora de consulta e diagnóstico de José Lima
+- Diagnóstico e Quantidade de consultas que aquele diagnóstico foi dado (Coluna deve chamar qtd)
+- Quantos Planos de Saúde que não tem médicos cadastrados
+
+## CRUD:
+- Alterar o nome de João Carlos para João Carlos da Silva
+- Deletar o plano de Saúde Unimed
+- Renomear a coluna Rua da tabela Paciente para Logradouro
+- Inserir uma coluna, na tabela Paciente, de nome data_nasc e inserir os valores (1990-04-18,1981-03-25,2004-09-04 e 1986-06-18) respectivamente
 
 ## Exercício 12:
+
+Planos:
+CodPlano(PK)	|NomePlano	|ValorPlano
+-|-|-
+1	|100 Minutos	|80
+2	|150 Minutos	|130
+3	|200 Minutos	|160
+4	|250 Minutos	|220
+5	|300 Minutos	|260
+6	|600 Minutos	|350
+
+Servicos:
+CodServico(PK)	|NomeServico	|ValorServico
+-|-|-
+1	|100 SMS	|10
+2	|SMS Ilimitado	|30
+3	|Internet 500 MB	|40
+4	|Internet 1 GB	|60
+5	|Internet 2 GB	|70
+
+Cliente:
+CodCliente(PK)	|NomeCliente	|DataInicio
+-|-|-
+1234	|Cliente A	|2012-10-15
+2468	|Cliente B	|2012-11-20
+3702	|Cliente C	|2012-11-25
+4936	|Cliente D	|2012-12-01
+6170	|Cliente E	|2012-12-18
+7404	|Cliente F	|2013-01-20
+8638	|Cliente G	|2013-01-25
+
+Contratos				
+CodCliente(PK)(FK)	|CodPlano(PK)(FK)	|CodServico(PK)(FK)	|Status	|Data(PK)
+-|-|-|-|-
+1234	|3	|1	|E	|2012-10-15
+1234	|3	|3	|E	|2012-10-15
+1234	|3	|3	|A	|2012-10-16
+1234	|3	|1	|A	|2012-10-16
+2468	|4	|4	|E	|2012-11-20
+2468	|4	|4	|A	|2012-11-21
+6170	|6	|2	|E	|2012-12-18
+6170	|6	|5	|E	|2012-12-19
+6170	|6	|2	|A	|2012-12-20
+6170	|6	|5	|A	|2012-12-21
+1234	|3	|1	|D	|2013-01-10
+1234	|3	|3	|D	|2013-01-10
+1234	|2	|1	|E	|2013-01-10
+1234	|2	|1	|A	|2013-01-11
+2468	|4	|4	|D	|2013-01-25
+7404	|2	|1	|E	|2013-01-20
+7404	|2	|5	|E	|2013-01-20
+7404	|2	|5	|A	|2013-01-21
+7404	|2	|1	|A	|2013-01-22
+8638	|6	|5	|E	|2013-01-25
+8638	|6	|5	|A	|2013-01-26
+7404	|2	|5	|D	|2013-02-03
+
+! Status de contrato A(Ativo), D(Desativado), E(Espera)
+! Um plano só é válido se existe pelo menos um serviço associado a ele
+
+## Consultar:
+- O nome do cliente, o nome do plano, a quantidade de estados de contrato (sem repetições) por contrato, dos planos cancelados, ordenados pelo nome do cliente
+- O nome do cliente, o nome do plano, a quantidade de estados de contrato (sem repetições) por contrato, dos planos não cancelados, ordenados pelo nome do cliente
+- O nome do cliente, o nome do plano, e o valor da conta de cada contrato que está ou esteve ativo, sob as seguintes condições:
+  - A conta é o valor do plano, somado à soma dos valores de todos os serviços
+  - Caso a conta tenha valor superior a R$400.00, deverá ser incluído um desconto de 8%
+  - Caso a conta tenha valor entre R$300,00 a R$400.00, deverá ser incluído um desconto de 5%
+  - Caso a conta tenha valor entre R$200,00 a R$300.00, deverá ser incluído um desconto de 3%
+  - Contas com valor inferiores a R$200,00 não tem desconto
+- O nome do cliente, o nome do serviço, e a duração, em meses (até a data de hoje) do serviço, dos cliente que nunca cancelaram nenhum plano
