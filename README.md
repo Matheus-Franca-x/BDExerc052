@@ -364,6 +364,7 @@ CodCliente(PK)(FK)	|CodPlano(PK)(FK)	|CodServico(PK)(FK)	|Status	|Data(PK)
 
 ## Info:
 -> Status de contrato A(Ativo), D(Desativado), E(Espera)
+
 -> Um plano só é válido se existe pelo menos um serviço associado a ele
 
 ## Consultar:
