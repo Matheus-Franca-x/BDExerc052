@@ -362,8 +362,9 @@ CodCliente(PK)(FK)	|CodPlano(PK)(FK)	|CodServico(PK)(FK)	|Status	|Data(PK)
 8638	|6	|5	|A	|2013-01-26
 7404	|2	|5	|D	|2013-02-03
 
-! Status de contrato A(Ativo), D(Desativado), E(Espera)
-! Um plano só é válido se existe pelo menos um serviço associado a ele
+## Info:
+-> Status de contrato A(Ativo), D(Desativado), E(Espera)
+-> Um plano só é válido se existe pelo menos um serviço associado a ele
 
 ## Consultar:
 - O nome do cliente, o nome do plano, a quantidade de estados de contrato (sem repetições) por contrato, dos planos cancelados, ordenados pelo nome do cliente
