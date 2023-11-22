@@ -44,7 +44,7 @@ Código(PK)	|Nome	|Logradouro	|Numero	|Pais	|Area	|Telefone	|CNPJ	|Cidade	|Trans
 -|-|-|-|-|-|-|-|-|-|-
 1	|Clone	|Av. Nações Unidas	|12000	|BR	|55	|1141487000	|NULL	|São Paulo	|NULL	|R$
 2	|Logitech	|28th Street	|100	|USA	|1	|2127695100	|NULL	|NULL	|Avião	|US$
-3	|LG	|Rod. Castello Branco	|NULL	|BR	|55	|800664400	|4159978100001	|Sorocaba	|NULL	|R$
+3	|LG	|Rod. Castello Branco	|NULL	|BR	|55	|0800664400	|4159978100001	|Sorocaba	|NULL	|R$
 4	|PcChips	|Ponte da Amizade	|NULL	|PY	|595	|NULL	|NULL	|NULL	|Navio	|US$
 
 1) Pede-se: (Quando o endereço concatenado não tiver número, colocar só o logradouro e o país, quando tiver colocar, também o número)
