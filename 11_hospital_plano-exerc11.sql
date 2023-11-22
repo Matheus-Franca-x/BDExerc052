@@ -1,7 +1,3 @@
-USE master
-
-DROP DATABASE hospital_plano
-
 CREATE DATABASE hospital_plano
 GO
 USE hospital_plano
