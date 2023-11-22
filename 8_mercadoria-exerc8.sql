@@ -1,7 +1,3 @@
-USE master
-
-DROP DATABASE mercadoria
-
 CREATE DATABASE mercadoria
 GO
 USE mercadoria
