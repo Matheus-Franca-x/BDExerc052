@@ -1,7 +1,3 @@
-USE master
-
-DROP DATABASE farmacia
-
 CREATE DATABASE farmacia
 GO
 USE farmacia
