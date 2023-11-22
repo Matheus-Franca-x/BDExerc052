@@ -1,7 +1,3 @@
-USE master
-
-DROP DATABASE loja_online
-
 CREATE DATABASE loja_online
 GO
 USE loja_online
