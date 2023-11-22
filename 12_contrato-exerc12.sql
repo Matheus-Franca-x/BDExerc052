@@ -1,7 +1,3 @@
-USE master
-
-DROP DATABASE contrato
-
 CREATE DATABASE contrato
 GO
 USE contrato
