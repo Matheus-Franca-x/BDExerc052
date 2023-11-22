@@ -53,7 +53,7 @@ Código(PK)	|Nome	|Logradouro	|Numero	|Pais	|Area	|Telefone	|CNPJ	|Cidade	|Trans
 ## Consultar:
 - 10% de desconto no pedido 1003
 - 5% de desconto em pedidos com valor maior de R$700,00
-- E atualizar aumento de 20% no valor de marcadorias com estoque menor de 10
+- E atualizar aumento de 20% no valor de mercadorias com estoque menor de 10
 - Data e valor dos pedidos do Luiz
 - CPF, Nome e endereço concatenado do cliente de nota 1004
 - País e meio de transporte da Cx. De som
