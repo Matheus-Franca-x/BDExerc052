@@ -51,18 +51,18 @@ Código(PK)	|Nome	|Logradouro	|Numero	|Pais	|Area	|Telefone	|CNPJ	|Cidade	|Trans
 2) Nota: (CPF deve vir sempre mascarado no formato XXX.XXX.XXX-XX e RG Sempre com um traçao antes do último dígito (Algo como XXXXXXXX-X), mas alguns tem 8 e outros 9 dígitos)
 
 ## Consultar:
-1) 10% de desconto no pedido 1003
-2) 5% de desconto em pedidos com valor maior de R$700,00
-3) E atualizar aumento de 20% no valor de mercadorias com estoque menor de 10
-4) Data e valor dos pedidos do Luiz
-5) CPF, Nome e endereço concatenado do cliente de nota 1004
-6) País e meio de transporte da Cx. De som
-7) Nome e Quantidade em estoque dos produtos fornecidos pela Clone
-8) Endereço concatenado e telefone dos fornecedores do monitor. (Telefone brasileiro (XX)XXXX-XXXX ou XXXX-XXXXXX (Se for 0800), Telefone Americano (XXX)XXX-XXXX)
-9) Tipo de moeda que se compra o notebook
-10) Considerando que hoje é 03/02/2019, há quantos dias foram feitos os pedidos e, criar uma coluna que escreva Pedido antigo para pedidos feitos há mais de 6 meses e pedido recente para os outros
-11) Nome e Quantos pedidos foram feitos por cada cliente
-12) RG,CPF,Nome e Endereço dos cliente cadastrados que Não Fizeram pedidos
+1) 10% de desconto no pedido 1003.
+2) 5% de desconto em pedidos com valor maior de R$700,00.
+3) E atualizar aumento de 20% no valor de mercadorias com estoque menor de 10.
+4) Data e valor dos pedidos do Luiz.
+5) CPF, Nome e endereço concatenado do cliente de nota 1004.
+6) País e meio de transporte da Cx. De som.
+7) Nome e Quantidade em estoque dos produtos fornecidos pela Clone.
+8) Endereço concatenado e telefone dos fornecedores do monitor. (Telefone brasileiro (XX)XXXX-XXXX ou XXXX-XXXXXX (Se for 0800), Telefone Americano (XXX)XXX-XXXX).
+9) Tipo de moeda que se compra o notebook.
+10) Considerando que hoje é 03/02/2019, há quantos dias foram feitos os pedidos e, criar uma coluna que escreva Pedido antigo para pedidos feitos há mais de 6 meses e pedido recente para os outros.
+11) Nome e Quantos pedidos foram feitos por cada cliente.
+12) RG,CPF,Nome e Endereço dos cliente cadastrados que Não Fizeram pedidos.
 
 
 ## Exercício 8:
@@ -120,12 +120,12 @@ Nota Fiscal(PK)	|Código Cliente(FK)	|Valor
 4567	|3	|19
 
 ## Consultar:
-1) Valor da Compra de Luis Paulo
-2) Valor da Compra de Marcos Henrique
-3) Endereço e telefone do comprador de Nota Fiscal = 4567
-4) Valor da mercadoria cadastrada do tipo " Pães"
-5) Nome do corredor onde está a Lasanha
-6) Nome do corredor onde estão os clorados
+1) Valor da Compra de Luis Paulo.
+2) Valor da Compra de Marcos Henrique.
+3) Endereço e telefone do comprador de Nota Fiscal = 4567.
+4) Valor da mercadoria cadastrada do tipo " Pães".
+5) Nome do corredor onde está a Lasanha.
+6) Nome do corredor onde estão os clorados.
 
 ## Exercício 10:
 
@@ -165,12 +165,12 @@ Nota Fiscal(PK)	|CPF_cliente(PK)(FK)	|Código_Medicamento(PK)(FK)	|Quantidade	|V
 
 ## Consultar:
 1) Nome, apresentação, unidade e valor unitário dos remédios que ainda não foram vendidos. Caso a unidade de cadastro seja comprimido, mostrar Comp.
-2) Nome dos clientes que compraram Amiodarona
-3) CPF do cliente, endereço concatenado, nome do medicamento (como nome de remédio),  apresentação do remédio, unidade, preço proposto, quantidade vendida e valor total dos remédios vendidos a Maria Zélia
-4) Data de compra, convertida, de Carlos Campos
+2) Nome dos clientes que compraram Amiodarona.
+3) CPF do cliente, endereço concatenado, nome do medicamento (como nome de remédio),  apresentação do remédio, unidade, preço proposto, quantidade vendida e valor total dos remédios vendidos a Maria Zélia.
+4) Data de compra, convertida, de Carlos Campos.
 
 ## Alterar:
-1) O nome da  Amitriptilina(Cloridrato) para Cloridrato de Amitriptilina
+5) O nome da  Amitriptilina(Cloridrato) para Cloridrato de Amitriptilina.
 
 ## Exercício 11:
 
@@ -214,21 +214,21 @@ Médico(PK)(FK)	|Paciente(PK)(FK)	|DataHora(PK)	|Diagnóstico
 5	|63259874100	|2021-02-12 10:00:00	|Rinoplastia
 
 ## Consultar:
-1) Nome e especialidade dos médicos da Amil
-2) Nome, Endereço concatenado, Telefone e Nome do Plano de Saúde de todos os pacientes
-3) Telefone do Plano de  Saúde de Ana Júlia
-4) Plano de Saúde que não tem pacientes cadastrados
-5) Planos de Saúde que não tem médicos cadastrados
-6) Data da consulta, Hora da consulta, nome do médico, nome do paciente e diagnóstico de todas as consultas
-7) Nome do médico, data e hora de consulta e diagnóstico de José Lima
-8) Diagnóstico e Quantidade de consultas que aquele diagnóstico foi dado (Coluna deve chamar qtd)
-9) Quantos Planos de Saúde que não tem médicos cadastrados
+1) Nome e especialidade dos médicos da Amil.
+2) Nome, Endereço concatenado, Telefone e Nome do Plano de Saúde de todos os pacientes.
+3) Telefone do Plano de  Saúde de Ana Júlia.
+4) Plano de Saúde que não tem pacientes cadastrados.
+5) Planos de Saúde que não tem médicos cadastrados.
+6) Data da consulta, Hora da consulta, nome do médico, nome do paciente e diagnóstico de todas as consultas.
+7) Nome do médico, data e hora de consulta e diagnóstico de José Lima.
+8) Diagnóstico e Quantidade de consultas que aquele diagnóstico foi dado (Coluna deve chamar qtd).
+9) Quantos Planos de Saúde que não tem médicos cadastrados.
 
 ## CRUD:
-1) Alterar o nome de João Carlos para João Carlos da Silva
-2) Deletar o plano de Saúde Unimed
-3) Renomear a coluna Rua da tabela Paciente para Logradouro
-4) Inserir uma coluna, na tabela Paciente, de nome data_nasc e inserir os valores (1990-04-18,1981-03-25,2004-09-04 e 1986-06-18) respectivamente
+10) Alterar o nome de João Carlos para João Carlos da Silva.
+11) Deletar o plano de Saúde Unimed.
+12) Renomear a coluna Rua da tabela Paciente para Logradouro.
+13) Inserir uma coluna, na tabela Paciente, de nome data_nasc e inserir os valores (1990-04-18,1981-03-25,2004-09-04 e 1986-06-18) respectivamente.
 
 ## Exercício 12:
 
@@ -289,17 +289,17 @@ CodCliente(PK)(FK)	|CodPlano(PK)(FK)	|CodServico(PK)(FK)	|Status	|Data(PK)
 7404	|2	|5	|D	|2013-02-03
 
 ## Info:
--> Status de contrato A(Ativo), D(Desativado), E(Espera)
+-> Status de contrato A(Ativo), D(Desativado), E(Espera).
 
--> Um plano só é válido se existe pelo menos um serviço associado a ele
+-> Um plano só é válido se existe pelo menos um serviço associado a ele.
 
 ## Consultar:
-1) O nome do cliente, o nome do plano, a quantidade de estados de contrato (sem repetições) por contrato, dos planos cancelados, ordenados pelo nome do cliente
-2) O nome do cliente, o nome do plano, a quantidade de estados de contrato (sem repetições) por contrato, dos planos não cancelados, ordenados pelo nome do cliente
+1) O nome do cliente, o nome do plano, a quantidade de estados de contrato (sem repetições) por contrato, dos planos cancelados, ordenados pelo nome do cliente.
+2) O nome do cliente, o nome do plano, a quantidade de estados de contrato (sem repetições) por contrato, dos planos não cancelados, ordenados pelo nome do cliente.
 3) O nome do cliente, o nome do plano, e o valor da conta de cada contrato que está ou esteve ativo, sob as seguintes condições:
-   1) A conta é o valor do plano, somado à soma dos valores de todos os serviços
-   2) Caso a conta tenha valor superior a R$400.00, deverá ser incluído um desconto de 8%
-   3) Caso a conta tenha valor entre R$300,00 a R$400.00, deverá ser incluído um desconto de 5%
-   4) Caso a conta tenha valor entre R$200,00 a R$300.00, deverá ser incluído um desconto de 3%
-   5) Contas com valor inferiores a R$200,00 não tem desconto
-4) O nome do cliente, o nome do serviço, e a duração, em meses (até a data de hoje) do serviço, dos cliente que nunca cancelaram nenhum plano
+   1) A conta é o valor do plano, somado à soma dos valores de todos os serviços.
+   2) Caso a conta tenha valor superior a R$400.00, deverá ser incluído um desconto de 8%.
+   3) Caso a conta tenha valor entre R$300,00 a R$400.00, deverá ser incluído um desconto de 5%.
+   4) Caso a conta tenha valor entre R$200,00 a R$300.00, deverá ser incluído um desconto de 3%.
+   5) Contas com valor inferiores a R$200,00 não tem desconto.
+4) O nome do cliente, o nome do serviço, e a duração, em meses (até a data de hoje) do serviço, dos cliente que nunca cancelaram nenhum plano.
