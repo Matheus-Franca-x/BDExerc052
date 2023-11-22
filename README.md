@@ -297,9 +297,9 @@ CodCliente(PK)(FK)	|CodPlano(PK)(FK)	|CodServico(PK)(FK)	|Status	|Data(PK)
 1) O nome do cliente, o nome do plano, a quantidade de estados de contrato (sem repetições) por contrato, dos planos cancelados, ordenados pelo nome do cliente
 2) O nome do cliente, o nome do plano, a quantidade de estados de contrato (sem repetições) por contrato, dos planos não cancelados, ordenados pelo nome do cliente
 3) O nome do cliente, o nome do plano, e o valor da conta de cada contrato que está ou esteve ativo, sob as seguintes condições:
-  1) A conta é o valor do plano, somado à soma dos valores de todos os serviços
-  2) Caso a conta tenha valor superior a R$400.00, deverá ser incluído um desconto de 8%
-  3) Caso a conta tenha valor entre R$300,00 a R$400.00, deverá ser incluído um desconto de 5%
-  4) Caso a conta tenha valor entre R$200,00 a R$300.00, deverá ser incluído um desconto de 3%
-  5) Contas com valor inferiores a R$200,00 não tem desconto
+   1) A conta é o valor do plano, somado à soma dos valores de todos os serviços
+   2) Caso a conta tenha valor superior a R$400.00, deverá ser incluído um desconto de 8%
+   3) Caso a conta tenha valor entre R$300,00 a R$400.00, deverá ser incluído um desconto de 5%
+   4) Caso a conta tenha valor entre R$200,00 a R$300.00, deverá ser incluído um desconto de 3%
+   5) Contas com valor inferiores a R$200,00 não tem desconto
 4) O nome do cliente, o nome do serviço, e a duração, em meses (até a data de hoje) do serviço, dos cliente que nunca cancelaram nenhum plano
